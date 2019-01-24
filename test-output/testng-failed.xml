@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [N11 Test Suite]">
+  <listeners>
+    <listener class-name="utils.Listeners.TestListener"/>
+    <listener class-name="utils.Listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="LoginTest(failed)">
+    <classes>
+      <class name="tests.ReactSignInTest">
+        <methods>
+          <include name="TC_Negative_Verify_correctUserName_IncorrectPassword"/>
+          <include name="TC_Negative_Verify_InvalidUserName_validPassword"/>
+          <include name="TC_Negative_Verify_UserName_ValidPassword"/>
+          <include name="TC_Negative_Verify_EmptyUserName_EmpltyPassword"/>
+          <include name="teardown"/>
+          <include name="TC_Negative_Verify_IncorrectUserName_IncorrectPassword"/>
+          <include name="setup"/>
+          <include name="TC_Negative_Verify_IncorrectUserName_correctPassword"/>
+          <include name="TC_Negative_Verify_InvalidUserName_InvalidPassword"/>
+          <include name="TC_Positive_Verify_the_NewUser_login_ByFacebook"/>
+          <include name="TC_Positive_Verify_ValidUserName_ValidPassword"/>
+          <include name="TC_Positive_Verify_the_NewUser_login_ByLinkedIn"/>
+          <include name="TC_Negative_Verify_validUserName_InvalidPassword"/>
+          <include name="TC_Negative_Verify_EmptyUserName_ValidPassword"/>
+        </methods>
+      </class> <!-- tests.ReactSignInTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [N11 Test Suite] -->
